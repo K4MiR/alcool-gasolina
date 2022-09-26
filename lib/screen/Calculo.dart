@@ -88,7 +88,6 @@ class _CalcularState extends State<Calcular> {
                     fontWeight: FontWeight.w600,
                   ),
                   controller: _controllerGasolina,
-                  onSubmitted: (value) {},
                 ),
               ),
             ),
@@ -121,6 +120,7 @@ class _CalcularState extends State<Calcular> {
       ),
     );
   }
+
   void _calcular() {
     double? precoAlcool = double.tryParse(_controllerAlcool.text);
     double? precoGasolina = double.tryParse(_controllerGasolina.text);
